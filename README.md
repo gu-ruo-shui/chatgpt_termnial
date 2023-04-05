@@ -2,7 +2,7 @@
 这个仓库的目的是改善在网页上使用 ChatGPT 的不便之处, 以便可以在终端快速的与 ChatGPT 进行交互, 提供更稳定的交互体验。使用 [OpenAI](https://github.com/openai/openai-python) 提供的 Python 包以及每个账户的免费额度($18 期限3个月)。用户可以通过管道方式将文本数据传输给 ChatGPT 进行处理，也可以通过交互式方式进行提问，或者仅仅向 ChatGPT 提出一个问题。
 
 ## 使用方法
-- [echo "question" |] chatgpt [-i] "translate chinese"
+- `[echo "question" |] chatgpt [-i] "translate chinese"`
   - 选项[-i] 表示进入交互命令行, 不加则回答完后程序结束
   - 管道给 chatgpt
 - 注意事项
