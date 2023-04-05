@@ -3,8 +3,10 @@
 
 ## 使用方法
 - [echo "question" |] chatgpt [-i] "translate chinese"
-- 选项[-i] 表示进入交互命令行, 不加则回答完后程序结束
-- 管道给 chatgpt
+  - 选项[-i] 表示进入交互命令行, 不加则回答完后程序结束
+  - 管道给 chatgpt
+- 注意事项
+  - 要能连接外网
 
 example
 ```sh
@@ -12,10 +14,11 @@ echo "衬衫的价格为9榜15便士" | chatgpt "给我讲讲这个出自哪里"
 ```
 ![](./images/chatgpt.gif)
 
-## 使用方法
+## 配置介绍
 
-1. [生成 api-keys](https://platform.openai.com/account/api-keys)
-2. chatgpt.py 57行左右处替换自己的 key
+1. `pip3 install openai`
+2. [openai 官网生成 api-keys](https://platform.openai.com/account/api-keys)
+3. chatgpt.py 57行左右处替换自己的 key
 ```
 chatgpt "ask your question"
 chatgpt -i  # 进入交互模式 
@@ -23,7 +26,7 @@ chatgpt -i  # 进入交互模式
 Ctrl-C 退出
 ```
 
-## Windows
+### Windows
 - `vim $PROFILE` 添加下面这个自定义函数
 - 修改 `$path` 为自己的路径
 - `. $PROFILE` 刷新配置文件
@@ -50,13 +53,13 @@ function chatgpt {
 }
 ```
 
-## Linux
+### Linux
 - `mv chatapt.py chatapt`
 - `chmod a+x chatapt`
 - 放置在 $path 路径下
 
-## MacOS
-没测试过
+### MacOS
+没测试过, 可以尝试 Linux 一样配置
 
 
 todo
