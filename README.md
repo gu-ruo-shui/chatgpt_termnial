@@ -58,8 +58,8 @@ function chatgpt {
 - 放置在 $path 路径下
 
 ### MacOS
-没测试过, 可以尝试 Linux 一样配置
+- 没测试过, 可以尝试 Linux 一样配置
 
 
-todo
+## todo
 - 清空 message
