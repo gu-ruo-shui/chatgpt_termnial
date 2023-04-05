@@ -7,11 +7,10 @@
   - 管道给 chatgpt
 - 注意事项
   - 要能连接外网
-
-example
-```sh
-echo "衬衫的价格为9榜15便士" | chatgpt "给我讲讲这个出自哪里" -i
-```
+- example
+  ```sh
+  echo "衬衫的价格为9榜15便士" | chatgpt "给我讲讲这个出自哪里" -i
+  ```
 ![](./images/chatgpt.gif)
 
 ## 配置介绍
